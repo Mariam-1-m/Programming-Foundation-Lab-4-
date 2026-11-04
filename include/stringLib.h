@@ -1,12 +1,8 @@
-extern char str1[];
-extern char str2[];
-extern char testStr[];
-extern int opNum;    
+ 
 
 
 void toUpperCase( char str []);
 void toLowerCase(char str []);
 int strCompare(const char str1 [],const char str2 []);
 void strCopy( char dest [], char src []);
-
 void displayOptionMenu();

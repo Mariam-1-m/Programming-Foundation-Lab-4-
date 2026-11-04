@@ -1,10 +1,6 @@
 #include "iostream"
 using namespace std;
 
-char str1[100]="";
-char str2[100]="";
-char testStr[100]="";
-int opNum=0;    
 
 
 void toUpperCase(char* str)
@@ -65,32 +61,36 @@ cout<< "\n String 2 :" <<str2 ;
 }
 
 void displayOptionMenu(){
-    cout<<"1-toUpperCase \n2-toLowerCase \n3-strCompare \n4-strCopy\n";
-    cout <<"Choose a string operation to apply(e.g 0,1,2,3) : \n";
+    char str1[100]="";
+char str2[100]="";
+char testStr[100]="";
+int opNum=0; 
+  cout <<"Choose a string operation to apply(e.g 1,2,3,4) : \n";
+  cout<<"1-toUpperCase \n2-toLowerCase\n3-strCompare\n4-strCopy\n";
    
 cin>>opNum;
  if(cin.fail()){
-  cout<<"Unvalid , Enter a digit from 0 to 3 not a character!";
+  cout<<"Unvalid , Enter a digit from 1 to 4 not a character!";
   return;
  }
 switch(opNum){
-case 0:
+case 1:
 cout<< "Enter a string to be upperCased : \n";
 cin>>testStr;
 toUpperCase(testStr);
 break;
-case 1:
+case 2:
 cout<< "Enter a string to be lowerCased : \n";
 cin>>testStr;
 toLowerCase(testStr);
 break;
-case 2:
+case 3:
 cout<< "Enter 2 strings to be compared: \n";
 cin>>str1;
 cin>>str2;
 strCompare(str1,str2);
 break;
-case 3:
+case 4:
 cout<< "Enter 2 strings to be copied (e.g 1st str to be copied , 2nd str copied into): \n";
 cin>>str1;
 cin>>str2;
@@ -100,6 +100,3 @@ default:
 cout<<"unvalid choice!\n";
 }
 }
-
-
-
