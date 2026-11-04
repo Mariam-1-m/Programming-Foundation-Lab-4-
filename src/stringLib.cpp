@@ -65,6 +65,7 @@ cout<< "\n String 2 :" <<str2 ;
 }
 
 void displayOptionMenu(){
+    cout<<"1-toUpperCase \n2-toLowerCase \n3-strCompare \n4-strCopy\n";
     cout <<"Choose a string operation to apply(e.g 0,1,2,3) : \n";
    
 cin>>opNum;
